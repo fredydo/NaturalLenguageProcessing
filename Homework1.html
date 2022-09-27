@@ -194,25 +194,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Homework1.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
-
-<span class="headerbtn__icon-container">
-  
-    <img src="_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://colab.research.google.com/github/executablebooks/jupyter-book/blob/master/docs/Homework1.ipynb"
+        <a href="https://colab.research.google.com/github/executablebooks/jupyter-book/blob/master/Homework1.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -954,7 +936,7 @@ title="Print to PDF"
 <h1>Homework 1 - Digital Communications 2022-2 Universidad de Antioquia<a class="headerlink" href="#homework-1-digital-communications-2022-2-universidad-de-antioquia" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
 </div>
@@ -967,7 +949,7 @@ where <span class="math notranslate nohighlight">\(X_1 ∼ U(1, 10)\)</span>, <s
 Simulate the total delay <span class="math notranslate nohighlight">\(Y\)</span> , with the sum of three random vectors of size 10000, using <code class="docutils literal notranslate"><span class="pre">scipy.stats.uniform</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">uniform</span>  
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">uniform</span>  
 
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">size</span> <span class="o">=</span> <span class="mi">10000</span>
@@ -990,7 +972,7 @@ Simulate the total delay <span class="math notranslate nohighlight">\(Y\)</span>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">5</span><span class="p">));</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
@@ -1017,7 +999,7 @@ Simulate the total delay <span class="math notranslate nohighlight">\(Y\)</span>
 <h3>a. Plot the histogram of <span class="math notranslate nohighlight">\(Y\)</span><a class="headerlink" href="#a-plot-the-histogram-of-y" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">histtype</span><span class="o">=</span><span class="s1">&#39;stepfilled&#39;</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">);</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">histtype</span><span class="o">=</span><span class="s1">&#39;stepfilled&#39;</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">);</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Histogram of $Y$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">);</span>
 </pre></div>
@@ -1032,7 +1014,7 @@ Simulate the total delay <span class="math notranslate nohighlight">\(Y\)</span>
 <h3>b. Calculate the <span class="math notranslate nohighlight">\(P(Y ≥ 25)\)</span> in simulated array<a class="headerlink" href="#b-calculate-the-p-y-25-in-simulated-array" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;P(Y ≥ 25) = </span><span class="si">{</span><span class="nb">sum</span><span class="p">(</span><span class="n">y</span><span class="o">&gt;</span><span class="mi">25</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;P(Y ≥ 25) = </span><span class="si">{</span><span class="nb">sum</span><span class="p">(</span><span class="n">y</span><span class="o">&gt;</span><span class="mi">25</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1047,7 +1029,7 @@ Simulate the total delay <span class="math notranslate nohighlight">\(Y\)</span>
 <h3>c. Find <span class="math notranslate nohighlight">\(f_Y(y)\)</span> using the convolution of <span class="math notranslate nohighlight">\(f_{X_1}(x_1)\)</span>, <span class="math notranslate nohighlight">\(f_{X_2}(x_2)\)</span> and <span class="math notranslate nohighlight">\(f_{X_3}(x_3)\)</span>, and plot the result. Plot <span class="math notranslate nohighlight">\(f_y(y)\)</span> and compare with histogram.<a class="headerlink" href="#c-find-f-y-y-using-the-convolution-of-f-x-1-x-1-f-x-2-x-2-and-f-x-3-x-3-and-plot-the-result-plot-f-y-y-and-compare-with-histogram" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x1_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x1_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
 <span class="n">x2_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
 <span class="n">x3_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
 
@@ -1076,7 +1058,7 @@ Simulate the total delay <span class="math notranslate nohighlight">\(Y\)</span>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">histtype</span><span class="o">=</span><span class="s1">&#39;stepfilled&#39;</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Histogram of $Y$&#39;</span><span class="p">);</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_range</span><span class="p">[</span><span class="mi">2</span><span class="p">:],</span> <span class="n">fy</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;$f_Y(y)$&#39;</span><span class="p">);</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span>
@@ -1091,12 +1073,12 @@ Simulate the total delay <span class="math notranslate nohighlight">\(Y\)</span>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;P(Y ≥ 25) = </span><span class="si">{</span><span class="nb">sum</span><span class="p">(</span><span class="n">fy</span><span class="p">[</span><span class="n">y_range</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">])</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;P(Y ≥ 25) = </span><span class="si">{</span><span class="nb">sum</span><span class="p">(</span><span class="n">fy</span><span class="p">[</span><span class="n">y_range</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">])</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>P(Y ≥ 25) = 75.88320085470103
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>P(Y ≥ 25) = 75.88320085470106
 </pre></div>
 </div>
 </div>
@@ -1109,7 +1091,7 @@ Simulate the total delay <span class="math notranslate nohighlight">\(Y\)</span>
 <p>A source generates four symbols <span class="math notranslate nohighlight">\(X = \{−2, −1, 0, 1\}\)</span> with <span class="math notranslate nohighlight">\(p_X = \{0.5, 0.25, 0.15, 0.1\}\)</span>. A channel affects the reception of each symbol with the following conditional densities <span class="math notranslate nohighlight">\(Y|X_1 ∼ N(−2, 1), Y |X_2 ∼ N(−1, 0.5), Y |X_3 ∼ N(0, 0.3),\)</span> and <span class="math notranslate nohighlight">\(Y|X_4 ∼ N(1, 0.7)\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span> 
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span> 
 
 <span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 <span class="n">px</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">]</span>
@@ -1126,7 +1108,7 @@ Simulate the total delay <span class="math notranslate nohighlight">\(Y\)</span>
 <h3>a. Four symbols are transmitted, and assume that the received signal is <span class="math notranslate nohighlight">\(Y = \{−1.8, −0.8, 0.8, 1.8\}\)</span>. Calculate the probabilities <span class="math notranslate nohighlight">\(P(X_i|Y )\)</span> from Bayes theorem, and decide the most likely received symbol.<a class="headerlink" href="#a-four-symbols-are-transmitted-and-assume-that-the-received-signal-is-y-1-8-0-8-0-8-1-8-calculate-the-probabilities-p-x-i-y-from-bayes-theorem-and-decide-the-most-likely-received-symbol" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy.core.fromnumeric</span> <span class="kn">import</span> <span class="n">argmax</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy.core.fromnumeric</span> <span class="kn">import</span> <span class="n">argmax</span>
 
 <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mf">1.8</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">]</span>
 <span class="n">xh</span> <span class="o">=</span> <span class="p">[]</span>
@@ -1233,7 +1215,7 @@ y4 =  1.8, xh4 =  1, Pmax = 0.9951016342624195
 <h3>b. Generate <span class="math notranslate nohighlight">\(X_{1000 \times 1}^{\operatorname{train}}\)</span> input symbols an the correspondent received sequence from the channel <span class="math notranslate nohighlight">\(Y_{1000 \times 1}^{\operatorname{train}}\)</span>, based on the distribution <span class="math notranslate nohighlight">\(f(Y |X_i)\)</span>. Use <code class="docutils literal notranslate"><span class="pre">GaussianNB</span></code> from <code class="docutils literal notranslate"><span class="pre">sklearn</span></code> library to estimate(<code class="docutils literal notranslate"><span class="pre">predict</span></code>) the most likely received symbol from <span class="math notranslate nohighlight">\(Y = \{−1.8, −0.8, 0.8, 1.8\}\)</span>. Compare with previous result.<a class="headerlink" href="#b-generate-x-1000-times-1-operatorname-train-input-symbols-an-the-correspondent-received-sequence-from-the-channel-y-1000-times-1-operatorname-train-based-on-the-distribution-f-y-x-i-use-gaussiannb-from-sklearn-library-to-estimate-predict-the-most-likely-received-symbol-from-y-1-8-0-8-0-8-1-8-compare-with-previous-result" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
 
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">N</span> <span class="o">=</span> <span class="mi">1000</span>
@@ -1264,7 +1246,7 @@ y4 =  1.8, xh4 =  1, Pmax = 0.9951016342624195
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">5</span><span class="p">));</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">5</span><span class="p">));</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Random Symbols&#39;</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">15</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">x_random</span><span class="p">[:</span><span class="mi">100</span><span class="p">],</span> <span class="n">use_line_collection</span><span class="o">=</span><span class="kc">True</span><span class="p">);</span>
@@ -1287,17 +1269,20 @@ y4 =  1.8, xh4 =  1, Pmax = 0.9951016342624195
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
 <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">y_label</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><style>#sk-container-id-1 {color: black;background-color: white;}#sk-container-id-1 pre{padding: 0;}#sk-container-id-1 div.sk-toggleable {background-color: white;}#sk-container-id-1 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-1 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-1 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-1 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-1 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-1 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-1 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-1 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-1 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-1 div.sk-item {position: relative;z-index: 1;}#sk-container-id-1 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-1 div.sk-item::before, #sk-container-id-1 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-1 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-1 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-1 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-1 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-1 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-1 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-1 div.sk-label-container {text-align: center;}#sk-container-id-1 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-1 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>GaussianNB()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label sk-toggleable__label-arrow">GaussianNB</label><div class="sk-toggleable__content"><pre>GaussianNB()</pre></div></div></div></div></div></div></div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GaussianNB()
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
 <span class="n">prob</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
 <span class="n">prob</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="nb">max</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">prob</span><span class="p">])</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Predictions: </span><span class="si">{</span><span class="n">predictions</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -1337,7 +1322,7 @@ and <span class="math notranslate nohighlight">\(X_{100 \times 2}^2\)</span>, an
 (<code class="docutils literal notranslate"><span class="pre">multivariate_normal</span></code> in <code class="docutils literal notranslate"><span class="pre">scipy.stats</span></code>):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">multivariate_normal</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">multivariate_normal</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
 
@@ -1355,7 +1340,7 @@ and <span class="math notranslate nohighlight">\(X_{100 \times 2}^2\)</span>, an
 <h3>a. Plot the sequences <span class="math notranslate nohighlight">\(X_{100 \times 2}^1, X_{100 \times 2}^2\)</span> (scatter plot)<a class="headerlink" href="#a-plot-the-sequences-x-100-times-2-1-x-100-times-2-2-scatter-plot" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">xv1</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">xv1</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Symbol 1&#39;</span><span class="p">);</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">xv2</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">xv2</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Symbol 2&#39;</span><span class="p">);</span>
@@ -1372,7 +1357,7 @@ and <span class="math notranslate nohighlight">\(X_{100 \times 2}^2\)</span>, an
 <h3>b. Four symbols are transmitted, and assume that the received signal is <span class="math notranslate nohighlight">\(Y = \{[1, 4], [4, −2], [0, 2], [1, 3.5]\}\)</span>. Use <code class="docutils literal notranslate"><span class="pre">GaussianNB</span></code> from <code class="docutils literal notranslate"><span class="pre">sklearn</span></code> library to estimate (command <code class="docutils literal notranslate"><span class="pre">predict</span></code>) the most likely received symbols.<a class="headerlink" href="#b-four-symbols-are-transmitted-and-assume-that-the-received-signal-is-y-1-4-4-2-0-2-1-3-5-use-gaussiannb-from-sklearn-library-to-estimate-command-predict-the-most-likely-received-symbols" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">]])</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">]])</span>
 
 <span class="n">pos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span>
 
@@ -1396,7 +1381,7 @@ and <span class="math notranslate nohighlight">\(X_{100 \times 2}^2\)</span>, an
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1413,7 +1398,7 @@ and <span class="math notranslate nohighlight">\(X_{100 \times 2}^2\)</span>, an
 <p>Let <span class="math notranslate nohighlight">\(X(t) = sin(ω + ϕ)\)</span>, where <span class="math notranslate nohighlight">\(ω ∼ U(8, 12)\)</span> and <span class="math notranslate nohighlight">\(φ ∼ U(0, 2π)\)</span>. Generate <span class="math notranslate nohighlight">\(N = 2000\)</span> sample functions, with a sampling frequency per function of <span class="math notranslate nohighlight">\(f_s = 1kHz\)</span>, for a signal duration of 5 seconds.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">uniform</span>  
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">uniform</span>  
 
 <span class="n">fs</span> <span class="o">=</span> <span class="mi">1000</span>
 <span class="n">N</span> <span class="o">=</span> <span class="mi">2000</span>
@@ -1433,7 +1418,7 @@ and <span class="math notranslate nohighlight">\(X_{100 \times 2}^2\)</span>, an
 <h3>a. plot the ensemble and time average. Is the process ergodic in the mean?<a class="headerlink" href="#a-plot-the-ensemble-and-time-average-is-the-process-ergodic-in-the-mean" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_ensamble</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x_ensamble</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
 <span class="n">x_time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">));</span>
@@ -1465,7 +1450,7 @@ and <span class="math notranslate nohighlight">\(X_{100 \times 2}^2\)</span>, an
 <h3>b. plot the ensemble and time autocorrelation function. Is the process ergodic in the autocorrelation?<a class="headerlink" href="#b-plot-the-ensemble-and-time-autocorrelation-function-is-the-process-ergodic-in-the-autocorrelation" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rxxu</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">correlate</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,:],</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,:],</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;same&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rxxu</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">correlate</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,:],</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,:],</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;same&#39;</span><span class="p">)</span>
 <span class="n">rxxt</span> <span class="o">=</span> <span class="n">rxxu</span><span class="o">/</span><span class="n">rxxu</span><span class="o">.</span><span class="n">size</span>
 <span class="n">rxxe</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">fs</span><span class="p">):</span>
@@ -1476,7 +1461,7 @@ and <span class="math notranslate nohighlight">\(X_{100 \times 2}^2\)</span>, an
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span> 
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span> 
 <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> 
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rxxe</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">100</span><span class="p">]);</span> 
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span>
@@ -1500,7 +1485,7 @@ and <span class="math notranslate nohighlight">\(X_{100 \times 2}^2\)</span>, an
 <p>Simulate a white noise with a gaussian vector <span class="math notranslate nohighlight">\(X\)</span> with zero mean, <span class="math notranslate nohighlight">\(N_0 = 0.01W/Hz\)</span>,<span class="math notranslate nohighlight">\(fs = 2kHz\)</span>, and <span class="math notranslate nohighlight">\(N = 10000\)</span> samples.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="mi">10000</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="mi">10000</span>
 <span class="n">N_0</span> <span class="o">=</span> <span class="mf">0.01</span>
 <span class="n">fs</span> <span class="o">=</span> <span class="mi">2000</span>
 <span class="n">noise_power</span> <span class="o">=</span> <span class="n">N_0</span> <span class="o">*</span> <span class="n">fs</span> <span class="o">/</span> <span class="mi">2</span> 
@@ -1523,7 +1508,7 @@ and <span class="math notranslate nohighlight">\(X_{100 \times 2}^2\)</span>, an
 <h3>a. Find the autocorrelation function <span class="math notranslate nohighlight">\(R_{XX}(τ)\)</span>, using <code class="docutils literal notranslate"><span class="pre">signal.correlate</span></code>, and plot the result. Compare the maximum value of <span class="math notranslate nohighlight">\(R_{XX}(τ)\)</span> with the noise power in bandwidth: <span class="math notranslate nohighlight">\(\frac{f_s \cdot N_0}{2}\)</span><a class="headerlink" href="#a-find-the-autocorrelation-function-r-xx-using-signal-correlate-and-plot-the-result-compare-the-maximum-value-of-r-xx-with-the-noise-power-in-bandwidth-frac-f-s-cdot-n-0-2" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.signal</span> <span class="kn">import</span> <span class="n">correlate</span> 
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.signal</span> <span class="kn">import</span> <span class="n">correlate</span> 
 
 <span class="n">corr</span> <span class="o">=</span> <span class="n">correlate</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;full&#39;</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
 
@@ -1561,7 +1546,7 @@ S_{n n}=10 \log <em>{10}\left(\left|\mathcal{F}\left{R</em>{X X}(\tau)\right}\ri
 Compare the average noise power with the average from <code class="docutils literal notranslate"><span class="pre">psd</span></code> command from <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.fftpack</span> <span class="kn">import</span> <span class="n">fft</span><span class="p">,</span> <span class="n">fftfreq</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.fftpack</span> <span class="kn">import</span> <span class="n">fft</span><span class="p">,</span> <span class="n">fftfreq</span>
 
 <span class="n">Sxx</span> <span class="o">=</span> <span class="mi">10</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">fft</span><span class="p">(</span><span class="n">corr</span><span class="p">))</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="n">fs</span><span class="p">))</span>
 
@@ -1587,7 +1572,7 @@ Compare the average noise power with the average from <code class="docutils lite
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The mean of psd is: 0.0038331673155275227
-The mean of noise power is: 0.005002358775044846
+The mean of noise power is: 0.005002358775044847
 </pre></div>
 </div>
 <img alt="_images/Homework1_45_1.png" src="_images/Homework1_45_1.png" />
@@ -1595,7 +1580,7 @@ The mean of noise power is: 0.005002358775044846
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">n_freq</span><span class="p">,</span> <span class="n">Sxx</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.8</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;PSD From FFT&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">psd</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">Fs</span><span class="o">=</span><span class="n">fs</span><span class="p">,</span> <span class="n">NFFT</span><span class="o">=</span><span class="mi">2</span><span class="o">**</span><span class="mi">14</span><span class="p">,</span> <span class="n">Fc</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">sides</span> <span class="o">=</span> <span class="s2">&quot;twosided&quot;</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.7</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;PSD command with NFF=$2^</span><span class="si">{14}</span><span class="s1">$&#39;</span><span class="p">);</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">psd</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">Fs</span><span class="o">=</span><span class="n">fs</span><span class="p">,</span> <span class="n">Fc</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">sides</span> <span class="o">=</span> <span class="s2">&quot;twosided&quot;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;PSD command&#39;</span><span class="p">);</span>
@@ -1604,7 +1589,7 @@ The mean of noise power is: 0.005002358775044846
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1204cb0cfd0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f4f63e29490&gt;
 </pre></div>
 </div>
 <img alt="_images/Homework1_46_1.png" src="_images/Homework1_46_1.png" />
@@ -1621,7 +1606,7 @@ and power <span class="math notranslate nohighlight">\(P_X = 4\)</span> Watts. T
 channel with AWGN, <span class="math notranslate nohighlight">\(Y(t) = X(t) + N(t)\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fs</span> <span class="o">=</span> <span class="mi">1000</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fs</span> <span class="o">=</span> <span class="mi">1000</span>
 <span class="n">N</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">T</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">cant_symbols</span> <span class="o">=</span> <span class="mi">500</span>
@@ -1645,7 +1630,7 @@ channel with AWGN, <span class="math notranslate nohighlight">\(Y(t) = X(t) + N(
 <h3>a. Add the gaussian noise correspondent to a <span class="math notranslate nohighlight">\(SNR=-1dB\)</span>, and plot <span class="math notranslate nohighlight">\(X(t)\)</span>, and <span class="math notranslate nohighlight">\(Y(t)\)</span><a class="headerlink" href="#a-add-the-gaussian-noise-correspondent-to-a-snr-1db-and-plot-x-t-and-y-t" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">211</span><span class="p">);</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Random sequence between $X =\{−2, +2\}$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">);</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">x</span><span class="p">);</span>
@@ -1668,7 +1653,7 @@ channel with AWGN, <span class="math notranslate nohighlight">\(Y(t) = X(t) + N(
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">SNRdB</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">SNRdB</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
 <span class="n">Px</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">Pn</span> <span class="o">=</span> <span class="n">Px</span> <span class="o">/</span> <span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="n">SNRdB</span><span class="o">/</span><span class="mi">10</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Noise power: </span><span class="si">{</span><span class="n">Pn</span><span class="si">:</span><span class="s1">0.3f</span><span class="si">}</span><span class="s1"> W&#39;</span><span class="p">)</span>
@@ -1714,7 +1699,7 @@ Signal duration: 5.000 s
 <h3>b. Plot the autocorrelation functions <span class="math notranslate nohighlight">\(R_{XX}\)</span> and <span class="math notranslate nohighlight">\(R_{YY}\)</span><a class="headerlink" href="#b-plot-the-autocorrelation-functions-r-xx-and-r-yy" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.signal</span> <span class="kn">import</span> <span class="n">correlate</span> 
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.signal</span> <span class="kn">import</span> <span class="n">correlate</span> 
 
 <span class="n">window</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">N</span>
 
@@ -1744,7 +1729,7 @@ Signal duration: 5.000 s
 <h3>c. Plot the power spectral densities <span class="math notranslate nohighlight">\(S_{XX}\)</span>, and <span class="math notranslate nohighlight">\(S_{YY}\)</span>.<a class="headerlink" href="#c-plot-the-power-spectral-densities-s-xx-and-s-yy" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span>
 <span class="n">Py_den</span><span class="p">,</span><span class="n">f</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">psd</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">Fs</span><span class="o">=</span><span class="n">fs</span><span class="p">,</span> <span class="n">Fc</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">sides</span> <span class="o">=</span> <span class="s2">&quot;onesided&quot;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;$S_</span><span class="si">{YY}</span><span class="s1">$&#39;</span><span class="p">);</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">psd</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">Fs</span><span class="o">=</span><span class="n">fs</span><span class="p">,</span> <span class="n">Fc</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">sides</span> <span class="o">=</span> <span class="s2">&quot;onesided&quot;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;$S_</span><span class="si">{XX}</span><span class="s1">$&#39;</span><span class="p">);</span>
@@ -1784,7 +1769,7 @@ x(t)=0.5 \sin (2 \pi 20 t)+0.3 \sin (2 \pi 80 t)+n(t)
 \end{equation}</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fs</span> <span class="o">=</span> <span class="mi">200</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fs</span> <span class="o">=</span> <span class="mi">200</span>
 <span class="n">T</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">N</span> <span class="o">=</span> <span class="n">T</span> <span class="o">*</span> <span class="n">fs</span>
 <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>
@@ -1801,7 +1786,7 @@ x(t)=0.5 \sin (2 \pi 20 t)+0.3 \sin (2 \pi 80 t)+n(t)
 <h3>a. Determine the coefficients of the <span class="math notranslate nohighlight">\(AR(4)\)</span> estimator of <span class="math notranslate nohighlight">\(x(t)\)</span>, using the Yule Walker equations<a class="headerlink" href="#a-determine-the-coefficients-of-the-ar-4-estimator-of-x-t-using-the-yule-walker-equations" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">correlate</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;full&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">correlate</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;full&#39;</span><span class="p">)</span>
 <span class="n">rx</span> <span class="o">=</span> <span class="n">rx</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">rx</span><span class="p">)</span>
 
 <span class="n">K</span><span class="o">=</span><span class="mi">10</span>
@@ -1863,7 +1848,7 @@ Estimated coefficients AR(4):
 <h3>b. Plot the estimated PSD (<code class="docutils literal notranslate"><span class="pre">psd</span></code> command), and the parametric PSD from Yule Walker equations<a class="headerlink" href="#b-plot-the-estimated-psd-psd-command-and-the-parametric-psd-from-yule-walker-equations" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.signal</span> <span class="kn">import</span> <span class="n">freqz</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.signal</span> <span class="kn">import</span> <span class="n">freqz</span>
 
 <span class="n">a</span><span class="o">=</span><span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="n">coeffs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="o">-</span><span class="n">coeffs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="o">-</span><span class="n">coeffs</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="o">-</span><span class="n">coeffs</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="p">]</span>
 
