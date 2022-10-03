@@ -28,6 +28,12 @@ repository:
   url: https://github.com/fredydo/NaturalLenguageProcessing
   branch: master  # Which branch of the repository should be used when creating links (optional)
 
+parse:
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+    - html_image
+
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
