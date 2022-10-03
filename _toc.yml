@@ -2,8 +2,13 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: content/intro
-chapters:
-- file: content/markdown
-- file: content/notebooks
-- file: content/markdown-notebooks
+root: intro
+parts:
+- caption: Nivel 1
+  chapters:
+  - file: content/introduccion
+    sections:
+    - file: "content/Google Colaboraty"
+    - file: content/markdown
+    - file: content/notebooks
+  - file: content/markdown-notebooks
