@@ -8,7 +8,9 @@ parts:
   chapters:
   - file: content/introduccion
     sections:
-    - file: "content/Google Colaboraty"
+    - file: "content/1.1 Google Colaboraty"
+    - file: "content/1.2 Python"
+    - file: "content/1.3 Python Sintaxis"
     - file: content/markdown
     - file: content/notebooks
   - file: content/markdown-notebooks
